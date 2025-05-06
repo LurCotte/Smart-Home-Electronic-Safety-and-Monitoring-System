@@ -1,5 +1,11 @@
 # 🔌 Smart Home Electronic Safety and Monitoring System
 
+![Flyer]([https://github.com/user-attachments/assets/68314629-e209-4303-87ca-301ea59e8e5e](https://github.com/LurCotte/Smart-Home-Electronic-Safety-and-Monitoring-System/blob/main/Progress/Week%203/Mikrokontroller.png))
+
+## Team Member
+
+![Team Member]([[https://github.com/user-attachments/assets/68314629-e209-4303-87ca-301ea59e8e5e](https://github.com/LurCotte/Smart-Home-Electronic-Safety-and-Monitoring-System/blob/main/Progress/Week%203/Mikrokontroller.png)](https://github.com/LurCotte/Smart-Home-Electronic-Safety-and-Monitoring-System/blob/main/Progress/Week%203/Profile.png))
+
 ## 📘 Deskripsi Proyek
 
 Proyek ini bertujuan untuk mengembangkan **sistem automasi rumah pintar (Smart Home Automation System)** yang dapat memantau dan mengontrol peralatan elektronik secara real-time. Sistem ini juga dilengkapi dengan fitur **auto cut-off** untuk menjaga peralatan rumah tangga dari fluktuasi tegangan yang berasal dari jaringan listrik PLN.
