@@ -1,10 +1,10 @@
 # 🔌 Smart Home Electronic Safety and Monitoring System
 
-![Flyer]([https://github.com/user-attachments/assets/68314629-e209-4303-87ca-301ea59e8e5e](https://github.com/LurCotte/Smart-Home-Electronic-Safety-and-Monitoring-System/blob/main/Progress/Week%203/Mikrokontroller.png))
+![alt text](https://github.com/LurCotte/Smart-Home-Electronic-Safety-and-Monitoring-System/blob/main/Progress/Week%203/Mikrokontroller.png?raw=true)
 
 ## Team Member
 
-![Team Member]([[https://github.com/user-attachments/assets/68314629-e209-4303-87ca-301ea59e8e5e](https://github.com/LurCotte/Smart-Home-Electronic-Safety-and-Monitoring-System/blob/main/Progress/Week%203/Mikrokontroller.png)](https://github.com/LurCotte/Smart-Home-Electronic-Safety-and-Monitoring-System/blob/main/Progress/Week%203/Profile.png))
+![alt text](https://github.com/LurCotte/Smart-Home-Electronic-Safety-and-Monitoring-System/blob/main/Progress/Week%203/Profile.png?raw=true)
 
 ## 📘 Deskripsi Proyek
 
