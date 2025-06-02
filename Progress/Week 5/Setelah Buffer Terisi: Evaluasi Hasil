@@ -1,0 +1,14 @@
+Setelah Buffer Terisi: Evaluasi Hasil
+} else {
+  bool semuaAman = true;
+  for (int i = 0; i < ukuranBuffer; i++) {
+    if (!bufferPemulihan[i]) {
+      semuaAman = false;
+      break;
+    }
+  }
+
+Penjelasan:
+Setelah 10 pengukuran selesai:
+Dicek apakah semua isi buffer bernilai true.
+Jika ada satu saja false, berarti belum stabil.
