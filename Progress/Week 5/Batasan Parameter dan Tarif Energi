@@ -1,0 +1,13 @@
+Batasan Parameter dan Tarif Energi
+const float batas_undervoltage = 150.0;
+const float batas_overvoltage = 250.0;
+const float batas_fluktuasi = 100.0;
+const float batas_arus_short = 3.0;
+const float tarif_per_kwh = 1352.0;
+Menetapkan batasan:
+
+Batas Tegangan rendah (<150V)
+Batas Tegangan tinggi (>250V)
+Batas Fluktuasi tegangan besar (>100V)
+Batas Overcurrent (>3A)
+Tarif listrik per kWh (900VA) (1352 rupiah)
