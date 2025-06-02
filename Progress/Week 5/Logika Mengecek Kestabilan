@@ -1,0 +1,23 @@
+Logika Mengecek Kestabilan
+if (
+  vrms >= batas_undervoltage &&
+  vrms <= batas_overvoltage &&
+  irms <= batas_arus_short &&
+  abs(vrms - vrms_sebelumnya) <= batas_fluktuasi
+) {
+  bufferPemulihan[indeksBuffer] = true;
+} else {
+  bufferPemulihan[indeksBuffer] = false;
+}
+indeksBuffer++;
+
+Penjelasan:
+
+Dicek apakah semua parameter:
+Tegangan dalam batas normal.
+Arus tidak berlebih.
+Tidak ada lonjakan tegangan tiba-tiba.
+
+Hasilnya disimpan dalam buffer:
+true jika aman,
+false jika belum aman.
