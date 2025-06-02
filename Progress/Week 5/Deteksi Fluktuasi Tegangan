@@ -1,0 +1,10 @@
+Deteksi Fluktuasi Tegangan
+else if (abs(vrms - vrms_sebelumnya) > batas_fluktuasi) {
+  UART_print("Proteksi: FLUKTUASI TEGANGAN!\r\n");
+  kondisiBerbahaya = true;
+}
+
+Penjelasan:
+Perbedaan antara tegangan sekarang dan sebelumnya dicek.
+Jika terlalu besar (> 100 V), dianggap fluktuatif.
+Proteksi diaktifkan untuk menghindari kerusakan akibat lonjakan tegangan.
