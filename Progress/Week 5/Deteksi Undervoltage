@@ -1,0 +1,9 @@
+Deteksi Undervoltage
+else if (vrms < batas_undervoltage) {
+  UART_print("Proteksi: UNDERVOLTAGE!\r\n");
+  kondisiBerbahaya = true;
+}
+
+Penjelasan:
+Jika tegangan terlalu rendah (< 150 V), juga dapat menyebabkan kinerja buruk atau kerusakan perangkat.
+Sistem menampilkan pesan dan mengaktifkan proteksi.
