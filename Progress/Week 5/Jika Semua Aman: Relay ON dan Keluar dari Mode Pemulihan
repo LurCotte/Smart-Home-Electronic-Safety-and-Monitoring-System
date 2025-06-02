@@ -1,0 +1,20 @@
+Jika Semua Aman: Relay ON dan Keluar dari Mode Pemulihan
+if (semuaAman) {
+  proteksiAktif = false;
+  digitalWrite(pinRelay, LOW); // Menyalakan relay kembali
+  UART_print("Relay ON (Kondisi Stabil)\r\n");
+  dalamPemulihan = false;
+} else {
+  indeksBuffer = 0; // Reset buffer dan ulang pemantauan
+}
+
+Penjelasan:
+
+Jika semuaAman = true:
+Proteksi dinonaktifkan.
+Relay dinyalakan kembali (LOW karena logika aktif rendah).
+UART memberi pesan bahwa kondisi sudah stabil.
+Keluar dari mode pemulihan (dalamPemulihan = false).
+
+Jika masih belum stabil:
+Buffer di-reset, dan sistem akan mengulang pemantauan selama 10 sampel lagi.
