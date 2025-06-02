@@ -1,0 +1,16 @@
+Variabel Monitoring
+float vrms = 0;
+float vrms_sebelumnya = 0;
+float irms = 0;
+float daya = 0;
+float energi_kwh = 0;
+float biaya_rupiah = 0;
+float energi_kwh_terakhir = 0;
+
+Penjelasan:
+vrms, irms: Tegangan dan arus RMS yang diukur dari ADC.
+daya: Hasil perkalian tegangan dan arus.
+energi_kwh: Akumulasi energi yang digunakan.
+biaya_rupiah: Biaya energi berdasarkan tarif.
+vrms_sebelumnya: Menyimpan nilai tegangan sebelumnya untuk mendeteksi fluktuasi.
+energi_kwh_terakhir: Digunakan untuk menentukan kapan harus menyimpan ke EEPROM (setiap 0.01 kWh perubahan).
