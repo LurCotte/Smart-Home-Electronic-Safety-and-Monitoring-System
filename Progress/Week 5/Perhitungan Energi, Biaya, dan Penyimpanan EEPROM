@@ -1,0 +1,34 @@
+Perhitungan Energi, Biaya, dan Penyimpanan EEPROM
+
+if (!proteksiAktif && irms > 0.1) {
+  energi_kwh += daya * (interval / 3600000.0);
+  biaya_rupiah = energi_kwh * tarif_per_kwh;
+
+  if (abs(energi_kwh - energi_kwh_terakhir) >= 0.01) {
+    simpanEEPROM();
+    energi_kwh_terakhir = energi_kwh;
+  }
+}
+
+Penjelasan:
+
+!proteksiAktif → sistem tidak dalam kondisi proteksi, artinya relay aktif dan beban terhubung.
+irms > 0.1 → hanya menghitung energi jika benar-benar ada arus, untuk menghindari pembacaan kosong/noise.
+Threshold 0.1 A digunakan untuk memastikan arus real, bukan noise dari pembacaan ADC.
+
+daya adalah hasil dari vrms * irms.
+interval adalah waktu dalam milidetik, maka perlu dikonversi ke jam agar cocok dengan satuan kWh
+
+Menghitung biaya listrik berdasarkan energi yang terpakai dan tarif per kWh.
+Misalnya tarif = Rp 1.500/kWh → jika energi = 0.02 kWh → biaya = Rp 30.
+
+Mengecek apakah terjadi kenaikan energi setidaknya 0.01 kWh (10 Wh) dibanding nilai terakhir yang disimpan.
+Tujuannya: menghindari penulisan EEPROM terlalu sering, agar meminimalkan keausan EEPROM.
+
+Jika perbedaan cukup signifikan, maka:
+simpanEEPROM() dipanggil untuk menyimpan data energi dan biaya.
+Nilai terakhir (energi_kwh_terakhir) diperbarui agar pembanding berikutnya tepat.
+
+
+
+
