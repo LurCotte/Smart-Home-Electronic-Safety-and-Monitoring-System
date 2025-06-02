@@ -1,0 +1,11 @@
+ Deteksi Arus Pendek (Short Circuit)
+if (irms > batas_arus_short) {
+  UART_print("Proteksi: SHORT CIRCUIT!\r\n");
+  kondisiBerbahaya = true;
+}
+
+Penjelasan:
+Jika nilai arus melebihi batas short (> 3.0 A), artinya ada kemungkinan hubungan pendek di beban.
+Sistem segera:
+Menampilkan pesan peringatan via UART.
+Menandai kondisiBerbahaya = true agar relay bisa dimatikan di bagian bawah.
