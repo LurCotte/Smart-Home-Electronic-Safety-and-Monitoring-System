@@ -1,0 +1,6 @@
+Mengisi Buffer Monitoring Kestabilan
+if (indeksBuffer < ukuranBuffer) {
+
+Penjelasan:
+Digunakan untuk mengisi array bufferPemulihan[10] sebanyak 10 kali (dalam 10×20ms = 200ms).
+Setiap iterasi menyimpan status true jika tegangan dan arus aman.
