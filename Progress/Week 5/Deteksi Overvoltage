@@ -1,0 +1,9 @@
+Deteksi Overvoltage
+else if (vrms > batas_overvoltage) {
+  UART_print("Proteksi: OVERVOLTAGE!\r\n");
+  kondisiBerbahaya = true;
+}
+
+Penjelasan:
+Jika tegangan RMS melampaui batas atas (> 250 V), bisa berbahaya bagi perangkat.
+Sistem memicu proteksi dan memutus daya (relay OFF).
