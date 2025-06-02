@@ -1,0 +1,12 @@
+Bagian Header dan Deklarasi Global
+#include <avr/io.h>
+#include <EEPROM.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <arduino.h>
+
+Penjelasan:
+avr/io.h: Digunakan untuk mengakses register low-level dari mikrokontroler AVR (seperti UBRR0L, UDR0, PORTB, dll).
+EEPROM.h: Library Arduino untuk menyimpan/membaca data dari memori EEPROM internal AVR.
+stdlib.h, stdio.h: Digunakan untuk manipulasi string, konversi, atau operasi format teks.
+arduino.h: Header utama Arduino untuk menyertakan fungsi-fungsi standar seperti pinMode, digitalWrite, millis(), dll.
