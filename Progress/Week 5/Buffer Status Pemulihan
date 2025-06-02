@@ -1,0 +1,16 @@
+Buffer Status Pemulihan
+struct StatusPemulihan {
+  bool teganganBaik;
+  bool arusBaik;
+};
+
+StatusPemulihan statusBaik[jumlahSampel];
+int indeksBuffer = 0;
+bool dalamPemulihan = false;
+
+Penjelasan:
+StatusPemulihan: Struct untuk menyimpan status tegangan dan arus pada satu sampel.
+statusBaik[]: Buffer untuk menyimpan beberapa status selama periode pemulihan.
+indeksBuffer: Penanda posisi index buffer.
+dalamPemulihan: Menandakan bahwa sistem sedang dalam masa penilaian apakah tegangan dan arus sudah stabil untuk mengaktifkan kembali relay.
+
