@@ -1,0 +1,6 @@
+Mengecek Apakah Sistem Sedang dalam Pemulihan
+if (dalamPemulihan) {
+
+Penjelasan:
+Mengecek apakah saat ini sistem dalam fase pemulihan setelah terjadi proteksi (relay OFF).
+Jika true, maka sistem mulai memantau kestabilan kondisi tegangan dan arus.
