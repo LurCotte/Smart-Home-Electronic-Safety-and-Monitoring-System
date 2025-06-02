@@ -1,0 +1,11 @@
+Variabel Pin dan Parameter Sistem
+const int pinRelay = 13;
+const int interval = 20;
+const int durasiPemulihan = 1000;
+const int jumlahSampel = durasiPemulihan / interval;
+
+Penjelasan:
+pinRelay: Menentukan pin digital untuk kontrol relay.
+interval: Interval waktu sampling data (ms).
+durasiPemulihan: Durasi total waktu pemulihan sistem saat proteksi aktif (ms).
+jumlahSampel: Jumlah buffer pemulihan berdasarkan durasi dan interval sampling (1000/20 = 50 data).
