@@ -1,0 +1,8 @@
+Ringkasan Alur Pemulihan
+
+| Langkah | Kondisi            | Aksi                                           |
+| ------- | ------------------ | ---------------------------------------------- |
+| 1       | Proteksi aktif     | Masuk mode pemulihan (`dalamPemulihan = true`) |
+| 2       | Monitoring 10x     | Simpan hasil ke `bufferPemulihan[]`            |
+| 3       | Evaluasi hasil     | Jika semua aman → lanjut, jika tidak → ulang   |
+| 4       | Semua kondisi aman | Relay ON, keluar dari pemulihan                |
