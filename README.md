@@ -4,7 +4,7 @@
 
 ## Team Member
 
-![alt text](https://github.com/LurCotte/Smart-Home-Electronic-Safety-and-Monitoring-System/blob/main/Progress/Week%203/Profile.png?raw=true)
+![Image](https://github.com/user-attachments/assets/e530937d-6de7-48fc-b9b0-b4658aeff7fe)
 
 ## 📘 Deskripsi Proyek
 
