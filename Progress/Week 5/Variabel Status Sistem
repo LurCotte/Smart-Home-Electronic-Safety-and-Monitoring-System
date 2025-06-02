@@ -1,0 +1,10 @@
+Variabel Status Sistem
+unsigned long startMillis;
+bool proteksiAktif = false;
+bool permintaanManualRelay = false;
+
+Penjelasan:
+startMillis: Penanda waktu awal (digunakan untuk sampling).
+proteksiAktif: Menandakan bahwa relay dimatikan karena proteksi.
+permintaanManualRelay: Menandai bahwa user meminta relay dinyalakan secara manual.
+
