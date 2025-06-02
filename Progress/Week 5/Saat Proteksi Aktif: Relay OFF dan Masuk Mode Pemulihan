@@ -1,0 +1,16 @@
+Saat Proteksi Aktif: Relay OFF dan Masuk Mode Pemulihan
+if (kondisiBerbahaya && !proteksiAktif) {
+  proteksiAktif = true;
+  digitalWrite(pinRelay, HIGH);  // Mematikan relay
+  UART_print("Relay OFF (Proteksi Aktif)\r\n");
+  dalamPemulihan = true;
+  indeksBuffer = 0;
+}
+
+Penjelasan:
+Jika ada bahaya dan proteksi belum aktif:
+proteksiAktif = true: Status proteksi diaktifkan.
+digitalWrite(pinRelay, HIGH): Relay dimatikan (OFF), yaitu memutus arus ke beban.
+UART_print(...): Memberi tahu pengguna bahwa proteksi aktif.
+dalamPemulihan = true: Sistem masuk mode monitoring untuk menunggu tegangan dan arus kembali stabil.
+indeksBuffer = 0: Buffer monitoring di-reset.
