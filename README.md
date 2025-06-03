@@ -72,7 +72,8 @@ Sistem menggunakan **komunikasi UART TTL** untuk mentransmisikan data antar pera
 
 *Tampilan GUI Python*
 
-![Uploading image.png…]()
+![Uploading 123.PNG…]()
+
 
 ## 🚀 Pengembangan Selanjutnya
 
