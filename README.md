@@ -16,6 +16,9 @@ Proyek ini bertujuan untuk mengembangkan **sistem automasi rumah pintar (Smart H
 - Memantau konsumsi energi listrik dan menghitung biaya secara akurat.
 - Melindungi perangkat dari overvoltage atau undervoltage melalui fitur auto cut-off.
 
+## Video Iklan
+https://vt.tiktok.com/ZSk2q9HfW/
+
 ## 🧠 Komponen Utama
 
 | Komponen       | Fungsi                                                                 |
